@@ -5,5 +5,9 @@
 # - 6782 -> 23
 # - 0,56 -> 11
 
-number = int(input('Введите положительное число '))
-
+number = input('Введите число: ')
+summ = 0
+for i in number:
+    if i.isdigit():     
+        summ += int(i)      
+print(f'Сумма элементов введенного числа равна: {summ}')
